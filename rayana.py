@@ -24,3 +24,7 @@ def write_name():
     turtle.color("white")
     turtle.hideturtle()
     turtle.write("Раяна", align="center", font=("Arial", 24, "bold"))
+
+def main():
+    turtle.speed(5)
+    draw_heart()
