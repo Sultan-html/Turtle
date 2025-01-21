@@ -30,3 +30,6 @@ def main():
     draw_heart()
     write_name()
     turtle.done()
+
+if __name__ == "__main__":
+    main()
