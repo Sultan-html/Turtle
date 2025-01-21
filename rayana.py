@@ -28,3 +28,4 @@ def write_name():
 def main():
     turtle.speed(5)
     draw_heart()
+    write_name()
