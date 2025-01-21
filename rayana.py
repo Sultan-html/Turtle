@@ -17,3 +17,10 @@ def draw_heart():
         turtle.forward(2)
     turtle.forward(133)
     turtle.end_fill()
+
+def write_name():
+    turtle.penup()
+    turtle.goto(0, -50)
+    turtle.color("white")
+    turtle.hideturtle()
+    turtle.write("Раяна", align="center", font=("Arial", 24, "bold"))
