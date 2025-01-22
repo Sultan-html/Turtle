@@ -1,35 +1,35 @@
 import turtle
 
+turtle.setup(300, 300)
+window = turtle.Screen()
+window.bgcolor("black")
+
+pen = turtle.Turtle()
+pen.shape("turtle")
+pen.speed(2)
+
 def draw_heart():
-    turtle.penup()
-    turtle.goto(0, -200)
-    turtle.pendown()
-    turtle.begin_fill()
-    turtle.fillcolor("red")
-    turtle.left(50)
-    turtle.forward(133)
-    for _ in range(200):
-        turtle.right(1)
-        turtle.forward(2)
-    turtle.left(120)
-    for _ in range(200):
-        turtle.right(1)
-        turtle.forward(2)
-    turtle.forward(133)
-    turtle.end_fill()
+    pen.penup()
+    pen.goto(0, -70)
+    pen.pendown()
+    pen.color("red")
+    pen.begin_fill()
+    pen.left(50)
+    pen.forward(133)
+    pen.circle(50, 200)
+    pen.right(140)
+    pen.circle(50, 200)
+    pen.forward(133)
+    pen.end_fill()
 
-def write_name():
-    turtle.penup()
-    turtle.goto(0, -50)
-    turtle.color("white")
-    turtle.hideturtle()
-    turtle.write("Раяна", align="center", font=("Arial", 24, "bold"))
+draw_heart()
 
-def main():
-    turtle.speed(5)
-    draw_heart()
-    write_name()
-    turtle.done()
+pen.penup()
+pen.goto(-54, 0)
+pen.color("white")
+pen.write("Раяна", font=("Courier", 24, "bold"))
 
-if __name__ == "__main__":
-    main()
+pen.hideturtle()
+
+turtle.done()
+#d
