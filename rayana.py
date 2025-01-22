@@ -32,4 +32,4 @@ pen.write("Раяна", font=("Courier", 24, "bold"))
 pen.hideturtle()
 
 turtle.done()
-#d
+#df
