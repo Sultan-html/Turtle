@@ -6,7 +6,7 @@ window.bgcolor("black")
 
 pen = turtle.Turtle()
 pen.shape("turtle")
-pen.speed(2)
+pen.speed(1)
 
 def draw_heart():
     pen.penup()
@@ -32,4 +32,4 @@ pen.write("Раяна", font=("Courier", 24, "bold"))
 pen.hideturtle()
 
 turtle.done()
-#df33322
+#df3332
